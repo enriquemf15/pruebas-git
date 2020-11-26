@@ -31,7 +31,7 @@ void setup() {
 }
 
 // first visible ASCIIcharacter '!' is number 33:
-int thisByte = 33;
+int thisByte = 48;
 // you can also write ASCII characters in single quotes.
 // for example, '!' is the same as 33, so you could also use this:
 // int thisByte = '!';
@@ -66,7 +66,7 @@ void loop() {
   Serial.println(thisByte, BIN);
 
   // if printed last visible character '~' or 126, stop:
-  if (thisByte == 126) {    // you could also use if (thisByte == '~') {
+  if (thisByte == 57) {    // you could also use if (thisByte == '~') {
     // This loop loops forever and does nothing
     while (true) {
       continue;
